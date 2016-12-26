@@ -1,0 +1,29 @@
+* {
+	margin: 0; 
+	padding: 0;
+}
+/*oocss*/
+.pad10 {
+	padding: 10px;
+}
+.pad20 {
+	padding: 20px;
+}
+li, ul, ol {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+.header {
+	text-align: center;
+	background-color: pink;
+}
+.content {
+	text-align: center;
+	background-color: lightblue;
+}
+.footer {
+	text-align: center;
+	background-color: lightgreen;
+}
