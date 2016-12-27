@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>pulldown_menu</title>
+		<script src="lib/react.min.js"></script>
+		<script src="lib/react-dom.min.js"></script>
+		<script src="lib/browser.min.js"></script>
+		<style>
+		
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			.box{
+				position: relative;
+			}
+			p {
+				outline: none;
+				border: none;
+				width: 80px;
+				margin: 0 auto;
+				text-align: center;
+				margin-top: 10px;
+				padding: 10px;
+				background: lightpink;
+				cursor: pointer;
+				z-index: 10;
+			}
+			ul {
+				background-color: lightblue;
+				width: 100px;
+				margin: 0 auto;
+				z-index: 1;
+/*				position: absolute;
+				top:38px;
+				left: 38%;*/
+			}
+			li, ul, ol {
+				list-style: none;
+				text-align: center;
+			}
+			li {
+				cursor: pointer;
+				border-bottom: 1px solid #aeaeae;
+			}
+			/* 下拉菜单的动态效果 */
+			/*ul {
+				transform: translate(0,-100px);
+				-ms-transform: translate(0,-100px); 
+				-webkit-transform: translate(0,-100px); 
+			}
+			.move {
+				transform: translate(50px,100px);
+				-ms-transform: translate(50px,100px);
+				-webkit-transform: translate(50px,100px);
+			}*/
+			
+		</style>
+	</head>
+	<body>
+		<div id="main"></div> 
+		<!--<select name="" id="">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+		</select>-->
+		<script src="js/pulldown_menu.js" type="text/babel"></script>
+		<script src="lib/jquery-1.11.1.min.js"></script>
+		<script>
+//			$("p").click(function () {
+//				alert(1)
+//				$("ul").slideToggle(5000);
+//			})
+
+			var pid = document.getElementById("pid");
+			var uid = document.getElementById("uid");
+			pid.onclick = function () {
+				alert(1)
+			}
+            
+		</script>
+	</body>
+</html>
