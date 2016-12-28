@@ -29,7 +29,7 @@ class Content extends React.Component {
 		this.setState({
 			pw: e.target.value.replace(/sb/g,"")
 		});
-		e.target.value = e.target.value.replace(/sb/g,"")
+		//e.target.value = e.target.value.replace(/sb/g,"")
 	}
 	filter_username(e) {
 		this.setState({
@@ -46,10 +46,10 @@ class Content extends React.Component {
 			 <div className="content">
             	<ul className="login_list">
             		<li>
-            			<input type="text" className="username" value={this.state.username} placeholder="请输入用户名" onChange={this.filter_username} / >
+            			<input type="text" className="username" value={this.state.username} placeholder="请输入用户名" onChange={(ev) => this.filter_username(ev)} / >
             		</li>
             		<li>
-            			<input type={password_type} className="password" value={this.state.pw} onChange={this.filter_pw} placeholder="请输入密码" />
+            			<input type={password_type} className="password" value={this.state.pw} onChange={(ev) => this.filter_pw(ev)} placeholder="请输入密码" />
             		</li>
             		<li className="ch_item">
             			<label>
